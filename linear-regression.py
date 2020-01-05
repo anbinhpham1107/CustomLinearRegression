@@ -36,7 +36,6 @@ def coefficient_of_determination(ys_orig,ys_line):
     return 1 - (squared_error_regr/squared_error_y_mean)
 
 
-
 def main():
     xs, ys = create_dataset(40, 80, 2, correlation='pos')
     
@@ -52,10 +51,7 @@ def main():
     plt.scatter(predict_x,predict_y, s=100, color = 'r')
     plt.plot(xs, regression_line)
     plt.show()
-    ##print(m,b)
-
-
-
+ 
 
 
 if __name__ == '__main__':
